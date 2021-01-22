@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 120em) {
+    html {
+        font-size: 6px;
+    }
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+#navbar{
+    background-color: var(--main-red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.363);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+@media (max-width: 40em) {
+    #navbar {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+.nav-list a {
+    display: flex;
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+.nav-list a:hover {
+    background-color: var(--main-blue);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(60deg, #454650, #211c24);
+}
+
+#welcome-section p {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--main-red);
+}
+
+/*PROJECT SECTION*/
+
+#projects {
+    text-align: center;
+    background-color: var(--main-blue);
+    padding: 20rem 2rem;
+}
+
+.project-section-header {
+    margin: 0 auto 10rem auto;
+    max-width: 100rem;
+    border-bottom: .2rem solid var(--main-white);
+}
+
+@media (max-width: 20rem) {
+    .project-section-header {
+        font-size: 4.5rem;
+    }
+}
+
+.projects-grid {
+    
+}
